@@ -10,22 +10,22 @@ public class Main {
 
     public static void exo1() {
         boolean sortie = false;
-        while (sortie == false) {
+        while (!sortie) {
             try (Scanner sc = new Scanner(System.in)) {
-                System.out.print("Entrez un nombre entrier : ");
+                System.out.print("Entrez un int : ");
                 int i = sc.nextInt();
                 System.out.println("" + i);
                 sortie = true;
             } catch (InputMismatchException e) {
-                System.out.println("Veuillez entrer un nombre entier !");
+                   System.out.println("Veuillez entrer un nombre entier !");
             } catch (NoSuchElementException e) {
                 System.out.println("Sortie forcée par l'utilisateur !");
                 break;
             }
         }
-
+        
         sortie = false;
-        while (sortie == false) {
+        while (!sortie) {
             try (Scanner sc = new Scanner(System.in)) {
                 System.out.print("Entrez un nombre réel : ");
                 float i = sc.nextFloat();
@@ -40,7 +40,7 @@ public class Main {
         }
 
         sortie = false;
-        while (sortie == false) {
+        while (!sortie) {
             try (Scanner sc = new Scanner(System.in)) {
                 System.out.print("Entrez un byte : ");
                 byte i = sc.nextByte();
@@ -55,7 +55,7 @@ public class Main {
         }
 
         sortie = false;
-        while (sortie == false) {
+        while (!sortie) {
             try (Scanner sc = new Scanner(System.in)) {
                 System.out.print("Entrez un texte : ");
                 char i = sc.nextLine().charAt(0);
@@ -70,7 +70,7 @@ public class Main {
         }
 
         sortie = false;
-        while (sortie == false) {
+        while (!sortie) {
             try (Scanner sc = new Scanner(System.in)) {
                 System.out.print("Entrez un short : ");
                 short i = sc.nextShort();
@@ -85,7 +85,7 @@ public class Main {
         }
 
         sortie = false;
-        while (sortie == false) {
+        while (!sortie) {
             try (Scanner sc = new Scanner(System.in)) {
                 System.out.print("Entrez un double : ");
                 double i = sc.nextDouble();
@@ -100,7 +100,7 @@ public class Main {
         }
 
         sortie = false;
-        while (sortie == false) {
+        while (!sortie) {
             try (Scanner sc = new Scanner(System.in)) {
                 System.out.print("Entrez un long : ");
                 long i = sc.nextLong();
@@ -115,7 +115,7 @@ public class Main {
         }
 
         sortie = false;
-        while (sortie == false) {
+        while (!sortie) {
             try (Scanner sc = new Scanner(System.in)) {
                 System.out.print("Entrez un texte : ");
                 String i = sc.nextLine();
